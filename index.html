@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>Magic in the zone – 충북대학교 마술소모임</title>
+  <title>Magic in the zone – 충북대학교 마술 소모임</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- 폰트 -->
@@ -644,18 +644,23 @@
       margin-bottom: 24px;
     }
 
+    /* 여기부터 이미지 카드 부분만 틀 수정 */
     .gallery-card {
+      position: relative;
       background: #020617;
       border-radius: 18px;
       overflow: hidden;
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.35);
+      padding-top: 65%;  /* 카드 높이 확보 (비율 고정) */
     }
 
     .gallery-card img {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
-      display: block;
       object-fit: cover;
+      display: block;
     }
 
     @media (max-width: 960px) {
@@ -829,10 +834,6 @@
           <div style="font-size:15px;">Magic in the zone</div>
         </div>
       </div>
-      <nav class="nav-right">
-        <button class="nav-pill primary">포트폴리오</button>
-        <button class="nav-pill">마술 컬렉션</button>
-      </nav>
     </div>
   </header>
 
@@ -951,13 +952,10 @@
       <div class="leader-text">
         <h3>안녕하세요, Magic in the zone 회장입니다!</h3>
         <p>
-          어떤 때부터 마술을 좋아하게 되었는지, 사람들이 같은 장면을 보고도 왜 다르게 “보았다”고 말하는지
-          궁금해졌습니다. 사람의 인생을 마술사의 연출로 표현한다면, 보이고 싶은 것보다 보이지 않는 것이 더 많을지도
-          모른다는 생각이 들었습니다.
+          전 사람들이 같은 장면을 보고도 왜 다르게 '보았다고 믿는가'를 궁금해 했습니다. 사람의 인생을 마술사의 언어로 표현하자면 보여주고 싶은 것은 보여주되 보이지 않고 싶은 건 숨기는 것으로 생각합니다. 하지만 누군가의 숨기는 의도가 기만에 그칠 때를 대비하여 사람들은 어떻게 일어난 일인지 생각해보는 태도를 가져야 한다고 생각합니다. 
         </p>
         <p>
-          마술은 눈을 속이는 기술이지만, 동시에 마음을 이해하는 창이라고 생각합니다.
-          이 소모임이 “마술적인 순간”을 즐기는 공간이면서, 심리학적으로도 깊이 있게 고민해보는 시간이 되었으면 합니다.
+          만약 여러분들이 마술사가 된다면 본인을 대표하는 인생을 살면서 다른 이들의 마술 인생에 대해 어떻게 공연하고 있는지 파악할 수 있으면 좋겠습니다.
         </p>
       </div>
 
@@ -966,24 +964,21 @@
         <!-- 왼쪽: 회장 정보 -->
         <div class="leader-profile-main">
           <div class="leader-photo">
-            <!-- 회장 사진 src 교체 -->
-            <img
-              src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="회장 프로필" />
+            <img src="leader.jpg" alt="회장 프로필" />
           </div>
 
           <div class="leader-profile-right">
             <div class="leader-profile-info">
-              <div class="leader-name">홍길동</div>
+              <div class="leader-name">경동규</div>
               <div class="leader-role">Magic in the zone 회장</div>
-              <div class="leader-pill">카드 마술 &amp; 심리학 스터디 담당</div>
+              <div class="leader-pill">마술 영상 &amp; 심리학 스터디 담당</div>
             </div>
 
             <div class="leader-career-inline">
               <h3>주요 경력</h3>
               <ul>
-                <li>렉쳐노트 퍼블리싱 대표</li>
-                <li>헐리우드 매직캐슬 회원</li>
+                <li>렉쳐노트(마술용품 전문샵) 퍼블리싱 회원</li>
+                <li>지역사회 봉사 및 공연 경험</li>
               </ul>
             </div>
           </div>
@@ -995,11 +990,11 @@
             <!-- 마술 용품·강의 대표 사진 src 교체 -->
             <img
               src="https://images.pexels.com/photos/1707823/pexels-photo-1707823.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="마술 용품/강의 대표" />
+              alt="마술 도구 관련 구매처" />
           </div>
           <div class="leader-partner-info">
-            <div class="leader-partner-title">마술 용품 · 강의 대표</div>
-            <div class="leader-partner-name">누구누구</div>
+            <div class="leader-partner-title">렉쳐노트 퍼블리싱</div>
+            <div class="leader-partner-name">대표: 할리우드 매직캐슬 회원 </div>
           </div>
         </div>
       </div>
@@ -1039,39 +1034,34 @@
         </p>
       </div>
 
-      <!-- 사진 8장 갤러리 (src는 자유롭게 교체) -->
+      <!-- 사진 9장 갤러리 -->
       <div class="gallery-grid">
         <div class="gallery-card">
-          <img src="https://images.pexels.com/photos/6980189/pexels-photo-6980189.jpeg?auto=compress&cs=tinysrgb&w=600"
-               alt="마술 활동 1" />
+          <img src="1.jpg" alt="마술 활동 1" />
         </div>
         <div class="gallery-card">
-          <img src="https://images.pexels.com/photos/6898859/pexels-photo-6898859.jpeg?auto=compress&cs=tinysrgb&w=600"
-               alt="마술 활동 2" />
+          <img src="2.jpg" alt="마술 활동 2" />
         </div>
         <div class="gallery-card">
-          <img src="https://images.pexels.com/photos/6898850/pexels-photo-6898850.jpeg?auto=compress&cs=tinysrgb&w=600"
-               alt="마술 활동 3" />
+          <img src="3.jpg" alt="마술 활동 3" />
         </div>
         <div class="gallery-card">
-          <img src="https://images.pexels.com/photos/6898853/pexels-photo-6898853.jpeg?auto=compress&cs=tinysrgb&w=600"
-               alt="마술 활동 4" />
+          <img src="4.jpg" alt="마술 활동 4" />
         </div>
         <div class="gallery-card">
-          <img src="https://images.pexels.com/photos/6898852/pexels-photo-6898852.jpeg?auto=compress&cs=tinysrgb&w=600"
-               alt="마술 활동 5" />
+          <img src="5.jpg" alt="마술 활동 5" />
         </div>
         <div class="gallery-card">
-          <img src="https://images.pexels.com/photos/6898855/pexels-photo-6898855.jpeg?auto=compress&cs=tinysrgb&w=600"
-               alt="마술 활동 6" />
+          <img src="6.jpg" alt="마술 활동 6" />
         </div>
         <div class="gallery-card">
-          <img src="https://images.pexels.com/photos/6898851/pexels-photo-6898851.jpeg?auto=compress&cs=tinysrgb&w=600"
-               alt="마술 활동 7" />
+          <img src="7.jpg" alt="마술 활동 7" />
         </div>
         <div class="gallery-card">
-          <img src="https://images.pexels.com/photos/6898854/pexels-photo-6898854.jpeg?auto=compress&cs=tinysrgb&w=600"
-               alt="마술 활동 8" />
+          <img src="8.jpg" alt="마술 활동 8" />
+        </div>
+        <div class="gallery-card">
+          <img src="9.jpg" alt="마술 활동 9" />
         </div>
       </div>
 
